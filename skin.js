@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.8/20017
 // Filename: ???? ???B_C.ggsk
-// Generated 2024-01-26T16:58:21
+// Generated 2024-01-31T09:35:45
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_roomchoice', 2, false, { ignoreInState: 0  });
@@ -12271,6 +12271,9 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._a_type.logicBlock_backgroundcolor();
+		me._a_type.onclick=function (e) {
+			player.openUrl("https:\/\/resilient-beignet-29b48c.netlify.app\/","");
+		}
 		me._a_type.onmouseover=function (e) {
 			me.elementMouseOver['a_type']=true;
 			me._a_type.logicBlock_backgroundcolor();
